@@ -1,4 +1,4 @@
-package milk.shop.iot;
+package milk.laba2.iot;
 
 public class Milk extends MilkProduct{
     private double percentageOfFat;
