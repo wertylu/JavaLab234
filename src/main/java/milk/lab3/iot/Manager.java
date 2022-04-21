@@ -8,7 +8,8 @@ public class Manager {
 public List<MilkProduct> sortByPrice (List<MilkProduct> milkbox, boolean descendingOrder){
     if(!descendingOrder){
         System.out.println("in increasing order by price");
-        return  milkbox.stream().sorted(Comparator.comparingDouble(MilkProduct::getPriceInUahPerUnit)).collect(Collectors.toList());
+        return  milkbox.stream().sorted(Comparator.comparing(MilkProduct::getPriceInUahPerUnit))
+                .collect(Collectors.toList());
     }
     System.out.println("in decreasing order by price");
     return  milkbox.stream().sorted(Comparator.comparing(MilkProduct::getPriceInUahPerUnit).reversed()).collect(Collectors.toList());
@@ -21,5 +22,9 @@ public List<MilkProduct> sortByOrigin (List<MilkProduct> milkbox, boolean descen
     System.out.println("in decreasing order by origin");
     return  milkbox.stream().sorted(Comparator.comparing(MilkProduct::getOrigin).reversed()).collect(Collectors.toList());
 
+}
+public List<MilkProduct> searchByHomeMadeBoolean (List<MilkProduct> milk){
+    System.out.println("Here are products that are made at home");
+    return milk.stream().filter(MilkProduct::getHomeMade).collect(Collectors.toList());
 }
 }

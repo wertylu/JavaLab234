@@ -36,7 +36,10 @@ public class MilkProduct {
     public String toString() {
         String check = checkIfFactoryMade(this.homeMade);
         return  "\nName: " + nameOfMilkProduct + "\nOrigin: "
-                + origin +  "\nPrice: " + priceInUahPerUnit+ "\n";
+                + origin +  "\nPrice: " + priceInUahPerUnit+ "\nHome made: " + homeMade+"\n";
     }
 
+    public boolean getHomeMade() {
+        return homeMade;
+    }
 }

@@ -47,5 +47,8 @@ public class Main {
 
         List<MilkProduct> byOrigin = manager.sortByOrigin(milkbox, true);
         byOrigin.forEach(System.out::println);
+
+        List<MilkProduct> homeMade = manager.searchByHomeMadeBoolean(milkbox);
+        homeMade.forEach(System.out::println);
     }
 }
