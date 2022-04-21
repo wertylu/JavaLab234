@@ -35,8 +35,8 @@ public class MilkProduct {
     @Override
     public String toString() {
         String check = checkIfFactoryMade(this.homeMade);
-        return "This milk product has the next parameters: " + "\nName: " + nameOfMilkProduct + "\nOrigin: "
-                + origin + "\nThis product is " + check + "\nProduct`s mass: " + volumeOrMass + "\nPrice: " + priceInUahPerUnit;
+        return  "\nName: " + nameOfMilkProduct + "\nOrigin: "
+                + origin +  "\nPrice: " + priceInUahPerUnit+ "\n";
     }
 
 }

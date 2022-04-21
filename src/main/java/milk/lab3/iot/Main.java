@@ -40,9 +40,12 @@ public class Main {
         milkbox.add(yoghurt2);
         milkbox.add(milk2);
 
-        System.out.println(manager.sortByPrice(milkbox, false));
-        System.out.println(manager.sortByOrigin(milkbox, true));
 
 
+        List<MilkProduct> byPrice = manager.sortByPrice(milkbox, false);
+        byPrice.forEach(System.out::println);
+
+        List<MilkProduct> byOrigin = manager.sortByOrigin(milkbox, true);
+        byOrigin.forEach(System.out::println);
     }
 }
