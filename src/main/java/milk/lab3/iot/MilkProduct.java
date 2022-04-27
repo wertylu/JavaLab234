@@ -1,10 +1,13 @@
 package milk.lab3.iot;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.util.Objects;
+
 @Getter
 @Setter
 public class MilkProduct {
-     private String nameOfMilkProduct;
+     private String nameOfMilkProduct ;
      private String origin;
      private double volumeOrMass;
      private double priceInUahPerUnit;
@@ -23,23 +26,25 @@ public class MilkProduct {
         this.homeMade = homeMade;
     }
 
-    public static String checkIfFactoryMade(boolean homeMade) {
-
-        if (homeMade) {
-            return "home made";
-        } else {
-            return "factory made";
-        }
-    }
 
     @Override
     public String toString() {
-        String check = checkIfFactoryMade(this.homeMade);
-        return  "\nName: " + nameOfMilkProduct + "\nOrigin: "
-                + origin +  "\nPrice: " + priceInUahPerUnit+ "\nHome made: " + homeMade+"\n";
+
+        return   nameOfMilkProduct + ", " + origin +  ", Price: " + priceInUahPerUnit+ ", Home made: " + homeMade+"\n";
     }
 
-    public boolean getHomeMade() {
-        return homeMade;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        MilkProduct that = (MilkProduct) o;
+        return Double.compare(that.volumeOrMass, volumeOrMass) == 0 && Double.compare(that.priceInUahPerUnit, priceInUahPerUnit) == 0 && homeMade == that.homeMade && Objects.equals(nameOfMilkProduct, that.nameOfMilkProduct) && Objects.equals(origin, that.origin);
     }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nameOfMilkProduct, origin, volumeOrMass, priceInUahPerUnit, homeMade);
+    }
+
+    public boolean getHomeMade() {return homeMade;}
 }
