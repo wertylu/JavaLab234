@@ -47,4 +47,15 @@ public class MilkProduct {
     }
 
     public boolean getHomeMade() {return homeMade;}
+
+    public String getHeaders(){
+        return "Product, Price";
+    }
+
+    public String toCSV(){
+        return this.getNameOfMilkProduct() + ", " + this.getPriceInUahPerUnit();
+    }
+
+
 }
+

@@ -19,15 +19,15 @@ public class Main {
     public static void main(String[] args) {
     Manager manager = new Manager();
 
-        Milk milk = new Milk ("milk","Poland",1,23, true, 23, true);
-        Cheese cheese = new Cheese("cheese","Ukraine",3,142, false, "Serenada", false);
-        SourCream yoghurt = new SourCream("yoghurt", "Ukraine", 0.45, 36, false, 2);
-        SourCream smetana = new SourCream("smetana", "Greece", 0.52, 41, true, 20);
-        Milk kefir = new Milk("kefir","Germany", 0.98, 28, true, 5, true);
-        Milk maslo = new Milk("maslo", "Ukraine", 0.5, 62, false, 40, false);
-        Cheese cheese2 = new Cheese("cheese", "Poland", 2, 190, true, "Kamamber", true);
-        SourCream yoghurt2 = new SourCream("yoghurt", "Germany", 0.48, 44, true, 0);
-        Milk milk2 = new Milk("milk", "Ukraine", 1, 34, false, 10, false);
+        MilkProduct milk = new Milk ("milk","Poland",1,23, true, 23, true);
+        MilkProduct cheese = new Cheese("cheese","Ukraine",3,142, false, "Serenada", false);
+        MilkProduct yoghurt = new SourCream("yoghurt", "Ukraine", 0.45, 36, false, 2);
+        MilkProduct smetana = new SourCream("smetana", "Greece", 0.52, 41, true, 20);
+        MilkProduct kefir = new Milk("kefir","Germany", 0.98, 28, true, 5, true);
+        MilkProduct maslo = new Milk("maslo", "Ukraine", 0.5, 62, false, 40, false);
+        MilkProduct cheese2 = new Cheese("cheese", "Poland", 2, 190, true, "Kamamber", true);
+        MilkProduct yoghurt2 = new SourCream("yoghurt", "Germany", 0.48, 44, true, 0);
+        MilkProduct milk2 = new Milk("milk", "Ukraine", 1, 34, false, 10, false);
 
     List<MilkProduct> milkbox = new ArrayList<>();
         milkbox.add(milk);

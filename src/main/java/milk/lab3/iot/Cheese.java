@@ -9,4 +9,11 @@ public class Cheese extends MilkProduct {
         this.typeOfCheese = typeOfCheese;
         this.slicedOrNot = slicedOrNot;
     }
+    public String getHeaders(){
+        return "Product, Price, HomeMade";
+    }
+
+    public String toCSV(){
+        return this.getNameOfMilkProduct() + ", " + this.getPriceInUahPerUnit()+ ", "+ this.getHomeMade();
+    }
 }

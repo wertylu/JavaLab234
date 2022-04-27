@@ -11,4 +11,11 @@ public class Milk extends MilkProduct {
         this.lactoseFree = lactoseFree;
 
     }
+    public String getHeaders(){
+        return "Product, Price, HomeMade";
+    }
+
+    public String toCSV(){
+        return this.getNameOfMilkProduct() + ", " + this.getPriceInUahPerUnit()+ ", "+ this.getHomeMade();
+    }
 }
