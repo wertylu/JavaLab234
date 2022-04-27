@@ -1,11 +1,12 @@
-package milk.lab3.iot;
+package milk.products.iot;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.util.Objects;
 
-@Getter
-@Setter
+@Data
 public class MilkProduct {
      private String nameOfMilkProduct ;
      private String origin;

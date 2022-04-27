@@ -1,5 +1,6 @@
-package milk.lab3.iot;
+package milk.products.iot;
 
+import milk.manager.iot.Manager;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

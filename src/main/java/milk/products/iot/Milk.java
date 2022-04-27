@@ -1,13 +1,14 @@
-package milk.lab3.iot;
+package milk.products.iot;
 
-public class SourCream extends MilkProduct {
+public class Milk extends MilkProduct {
     private double percentageOfFat;
+    private boolean lactoseFree;
 
-
-    public SourCream(String nameOfMilkProduct, String origin, double volumeOrMass, double priceInUahPerKilo, boolean homeMade, double percentageOfFat) {
+    public Milk(String nameOfMilkProduct, String origin, double volumeOrMass, double priceInUahPerKilo, boolean homeMade, double percentageOfFat, boolean lactoseFree) {
         super(nameOfMilkProduct, origin, volumeOrMass, priceInUahPerKilo, homeMade);
 
         this.percentageOfFat = percentageOfFat;
+        this.lactoseFree = lactoseFree;
 
     }
     public String getHeaders(){
@@ -18,4 +19,3 @@ public class SourCream extends MilkProduct {
         return this.getNameOfMilkProduct() + ", " + this.getPriceInUahPerUnit()+ ", "+ this.getHomeMade();
     }
 }
-

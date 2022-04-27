@@ -1,4 +1,4 @@
-package milk.lab3.iot;
+package milk.products.iot;
 //        Лабораторна робота 3
 
 //        Необхідно створити клас - Менеджер, що міститиме логіку
@@ -10,6 +10,8 @@ package milk.lab3.iot;
 
 //        Для сортування слід використати вбудовані методи сортування, доступні в мові Java
 //        Сортування слід реалізувати в окремому методі
+
+import milk.manager.iot.Manager;
 
 import java.util.ArrayList;
 import java.util.List;

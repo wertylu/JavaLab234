@@ -1,4 +1,6 @@
-package milk.lab3.iot;
+package milk.manager.iot;
+
+import milk.products.iot.MilkProduct;
 
 import java.util.Comparator;
 import java.util.List;

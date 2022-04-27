@@ -1,4 +1,4 @@
-package milk.lab3.iot;
+package milk.products.iot;
 
 public class Cheese extends MilkProduct {
     private String typeOfCheese;

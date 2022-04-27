@@ -1,4 +1,4 @@
-package milk.lab3.iot;
+package milk.products.iot;
 
 
 import org.junit.jupiter.api.Test;
