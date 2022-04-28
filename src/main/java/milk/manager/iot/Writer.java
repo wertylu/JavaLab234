@@ -29,8 +29,6 @@ public class Writer {
                 writer.write(box.toCSV());
                 writer.write("\r\n");
             }
-        } catch (IOException e){
-            e.printStackTrace();
         }
     }
 

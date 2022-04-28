@@ -15,9 +15,7 @@ public class MilkProduct {
      private boolean homeMade;
 
 
-    public MilkProduct() {
 
-    }
 
     public MilkProduct(String nameOfMilkProduct, String origin, double volumeOrMass, double priceInUahPerUnit, boolean homeMade) {
         this.nameOfMilkProduct = nameOfMilkProduct;

@@ -11,11 +11,11 @@ public class SourCream extends MilkProduct {
 
     }
     public String getHeaders(){
-        return "Product, Price, HomeMade";
+        return super.getHeaders() +", HomeMade";
     }
 
     public String toCSV(){
-        return this.getNameOfMilkProduct() + ", " + this.getPriceInUahPerUnit()+ ", "+ this.getHomeMade();
+        return super.toCSV()+ ", "+ this.getHomeMade();
     }
 }
 

@@ -1,6 +1,10 @@
-package milk.products.iot;
+package milk.manager.iot;
 
 import milk.manager.iot.Manager;
+import milk.products.iot.Cheese;
+import milk.products.iot.Milk;
+import milk.products.iot.MilkProduct;
+import milk.products.iot.SourCream;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -13,7 +17,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 class ManagerTest {
     Manager manager = new Manager();
     List<MilkProduct> milkbox = new ArrayList<>(Arrays.asList(
-            new Milk ("milk","Poland",1,23, true, 23, true),
+            new Milk("milk","Poland",1,23, true, 23, true),
             new Cheese("cheese","Ukraine",3,142, false, "Serenada", false),
             new SourCream("yoghurt", "Ukraine", 0.45, 36, false, 2),
             new SourCream("smetana", "Greece", 0.52, 41, true, 20),
