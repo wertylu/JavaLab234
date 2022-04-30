@@ -11,17 +11,21 @@ import milk.products.iot.MilkProduct;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.util.List;
 
-public class Writer {
+public final class Writer {
     //1000-7
-    public static void writeToCSV(List<MilkProduct> milkbox) throws IOException {
-        try(FileWriter writer = new FileWriter("C:\\Users\\alfez\\Desktop\\java repos\\Java2\\JavaLab234\\src\\main\\resources\\META-INF\\result.csv"))
-        {
+    private Writer() {
+
+    }
+    public static void writeToCSV(final List<MilkProduct> milkbox) throws IOException {
+        try (FileWriter writer = new FileWriter("result.csv", StandardCharsets.UTF_8)) {
             String previousClassName = "";
 
-            for(MilkProduct box: milkbox){
-                if(!box.getClass().getSimpleName().equals(previousClassName)){
+            for (MilkProduct box: milkbox) {
+                if (!box.getClass().getSimpleName().equals(previousClassName)) {
+                    writer.write("\r\n");
                     writer.write(box.getHeaders());
                     writer.write("\r\n");
                     previousClassName = box.getClass().getSimpleName();
@@ -33,3 +37,6 @@ public class Writer {
     }
 
 }
+
+
+

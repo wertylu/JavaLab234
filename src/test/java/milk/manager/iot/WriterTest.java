@@ -32,7 +32,7 @@ class WriterTest {
 
 
         manager.sortByOrigin(milkbox, true);
-        File file = new File("C:\\Users\\alfez\\Desktop\\java repos\\Java2\\JavaLab234\\src\\main\\resources\\META-INF\\result.csv");
+        File file = new File("result.csv");
         Writer.writeToCSV(milkbox);
         Scanner scanner = new Scanner(file, StandardCharsets.UTF_8);
         StringBuilder result = new StringBuilder();
@@ -58,7 +58,7 @@ class WriterTest {
 
 
         manager.sortByOrigin(milkbox, true);
-        File file = new File("C:\\Users\\alfez\\Desktop\\java repos\\Java2\\JavaLab234\\src\\main\\resources\\META-INF\\result.csv");
+        File file = new File("result.csv");
         Writer.writeToCSV(milkbox);
         Scanner scanner = new Scanner(file, StandardCharsets.UTF_8);
         StringBuilder result = new StringBuilder();
@@ -74,7 +74,7 @@ class WriterTest {
     @Test
     void writeToCSVEmty() throws IOException {
 
-        File file = new File("C:\\Users\\alfez\\Desktop\\java repos\\Java2\\JavaLab234\\src\\main\\resources\\META-INF\\result.csv");
+        File file = new File("result.csv");
         Writer.writeToCSV(new ArrayList<>());
         Scanner scanner = new Scanner(file, StandardCharsets.UTF_8);
         StringBuilder result = new StringBuilder();

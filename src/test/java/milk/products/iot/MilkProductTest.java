@@ -21,8 +21,20 @@ class MilkProductTest {
     }
 
     @Test
-    void testEqualsAndHash() {
+    void testEqualsAndHash0() {
         EqualsVerifier.simple().forClass(MilkProduct.class).verify();
+    }
+    @Test
+    void testEqualsAndHash1() {
+        EqualsVerifier.simple().forClass(Cheese.class).verify();
+    }
+    @Test
+    void testEqualsAndHash2() {
+        EqualsVerifier.simple().forClass(Milk.class).verify();
+    }
+    @Test
+    void testEqualsAndHash3() {
+        EqualsVerifier.simple().forClass(SourCream.class).verify();
     }
 
 

@@ -1,0 +1,23 @@
+
+Product, Price, HomeMade
+milk, 23.0, true
+
+Product, Price, HomeMade
+cheese, 142.0, false
+
+Product, Price, HomeMade
+yoghurt, 36.0, false
+smetana, 41.0, true
+
+Product, Price, HomeMade
+kefir, 28.0, true
+maslo, 62.0, false
+
+Product, Price, HomeMade
+cheese, 190.0, true
+
+Product, Price, HomeMade
+yoghurt, 44.0, true
+
+Product, Price, HomeMade
+milk, 34.0, false
