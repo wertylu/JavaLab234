@@ -1,7 +1,6 @@
 package milk.manager.iot;
 
 import milk.products.iot.MilkProduct;
-
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -11,14 +10,14 @@ public List<MilkProduct> sortByPrice(final List<MilkProduct> milkbox,
                                      final boolean descendingOrder) {
     if (!descendingOrder) {
         System.out.println("----------in increasing order"
-                + " by price----------\n");
+                        + " by price----------\n");
         return  milkbox.stream().sorted(Comparator
                         .comparing(MilkProduct::getPriceInUahPerUnit))
                         .collect(Collectors.toList());
     }
     System.out.println("----------in decreasing order by price----------\n");
     return  milkbox.stream()
-                .sorted(Comparator.comparing(MilkProduct::getPriceInUahPerUnit)
+                    .sorted(Comparator.comparing(MilkProduct::getPriceInUahPerUnit)
                     .reversed()).collect(Collectors.toList());
 }
 

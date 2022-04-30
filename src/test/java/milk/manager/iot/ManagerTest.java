@@ -17,8 +17,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
 class ManagerTest {
     Manager manager = new Manager();
     List<MilkProduct> milkbox = new ArrayList<>(Arrays.asList(
-            new Milk("milk","Poland",1,23, true, 23, true),
-            new Cheese("cheese","Ukraine",3,142, false, "Serenada", false),
+            new Milk("milk", "Poland", 1, 23, true, 23, true),
+            new Cheese("cheese", "Ukraine", 3, 142, false, "Serenada", false),
             new SourCream("yoghurt", "Ukraine", 0.45, 36, false, 2),
             new SourCream("smetana", "Greece", 0.52, 41, true, 20),
             new Milk("kefir","Germany", 0.98, 28, true, 5, true),
@@ -33,7 +33,7 @@ class ManagerTest {
         List<MilkProduct> actual = manager.sortByPrice(milkbox, true);
         List<MilkProduct> expected = new ArrayList<>(Arrays.asList(
                 new Cheese("cheese", "Poland", 2, 190, true, "Kamamber", true),
-                new Cheese("cheese","Ukraine",3,142, false, "Serenada", false),
+                new Cheese("cheese", "Ukraine", 3, 142, false, "Serenada", false),
                 new Milk("maslo", "Ukraine", 0.5, 62, false, 40, false),
                 new SourCream("yoghurt", "Germany", 0.48, 44, true, 0),
                 new SourCream("smetana", "Greece", 0.52, 41, true, 20),

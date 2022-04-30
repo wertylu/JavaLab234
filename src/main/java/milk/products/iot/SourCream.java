@@ -6,7 +6,10 @@ public final class SourCream extends MilkProduct {
     private double percentageOfFat;
 
 
-    public SourCream(final String nameOfMilkProduct, final String origin, final double volumeOrMass, final double priceInUahPerKilo, final boolean homeMade, final double percentageOfFat) {
+    public SourCream(final String nameOfMilkProduct,
+                     final String origin, final double volumeOrMass,
+                     final double priceInUahPerKilo, final boolean homeMade,
+                     final double percentageOfFat) {
         super(nameOfMilkProduct, origin, volumeOrMass, priceInUahPerKilo, homeMade);
 
         this.percentageOfFat = percentageOfFat;

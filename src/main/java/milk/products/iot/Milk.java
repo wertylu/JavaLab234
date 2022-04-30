@@ -6,7 +6,10 @@ public final class Milk extends MilkProduct {
     private double percentageOfFat;
     private boolean lactoseFree;
 
-    public Milk(final String nameOfMilkProduct, final String origin, final double volumeOrMass, final double priceInUahPerKilo, final boolean homeMade, final double percentageOfFat, final boolean lactoseFree) {
+    public Milk(final String nameOfMilkProduct, final String origin,
+                final double volumeOrMass, final double priceInUahPerKilo,
+                final boolean homeMade, final double percentageOfFat,
+                final boolean lactoseFree) {
         super(nameOfMilkProduct, origin, volumeOrMass, priceInUahPerKilo, homeMade);
 
         this.percentageOfFat = percentageOfFat;

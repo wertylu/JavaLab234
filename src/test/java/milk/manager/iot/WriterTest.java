@@ -5,18 +5,14 @@ import milk.products.iot.Milk;
 import milk.products.iot.MilkProduct;
 import milk.products.iot.SourCream;
 import org.junit.jupiter.api.Test;
-
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
-
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class WriterTest {
 
@@ -86,5 +82,4 @@ class WriterTest {
         assertEquals(expected, result.toString());
 
     }
-
 }

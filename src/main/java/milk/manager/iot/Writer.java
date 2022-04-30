@@ -17,26 +17,23 @@ import java.util.List;
 public final class Writer {
     //1000-7
     private Writer() {
-
+        throw new UnsupportedOperationException("Utility class error");
     }
     public static void writeToCSV(final List<MilkProduct> milkbox) throws IOException {
+        String separator = System.getProperty("line.separator");
         try (FileWriter writer = new FileWriter("result.csv", StandardCharsets.UTF_8)) {
             String previousClassName = "";
 
             for (MilkProduct box: milkbox) {
                 if (!box.getClass().getSimpleName().equals(previousClassName)) {
-                    writer.write("\r\n");
+                    writer.write(separator);
                     writer.write(box.getHeaders());
-                    writer.write("\r\n");
+                    writer.write(separator);
                     previousClassName = box.getClass().getSimpleName();
                 }
                 writer.write(box.toCSV());
-                writer.write("\r\n");
+                writer.write(separator);
             }
         }
     }
-
 }
-
-
-

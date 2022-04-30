@@ -1,10 +1,7 @@
 package milk.products.iot;
 
 import lombok.Data;
-
 import java.util.Objects;
-
-
 
 @Data
 public class MilkProduct {
@@ -17,7 +14,8 @@ public class MilkProduct {
 
 
 
-    public MilkProduct(final String nameOfMilkProduct, final String origin, final double volumeOrMass, final double priceInUahPerUnit, final boolean homeMade) {
+    public MilkProduct(final String nameOfMilkProduct, final String origin, final double volumeOrMass,
+                       final double priceInUahPerUnit, final boolean homeMade) {
         this.nameOfMilkProduct = nameOfMilkProduct;
         this.origin = origin;
         this.volumeOrMass = volumeOrMass;
