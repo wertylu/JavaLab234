@@ -27,6 +27,7 @@ class RegexManagerTest {
         RegexManager r = new RegexManager("src/main/resources/Files/dymmyText");
         String expected = "kkkk askjfdkasjflkjaslfaslfasfasdsddddd gg sas\n";
         String actual = r.removeWordsWithMoreVowels();
+        System.out.println(actual);
         assertEquals(expected, actual);
 
     }

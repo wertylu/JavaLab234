@@ -17,10 +17,17 @@ import lombok.Data;
 
 @Data
 public class RegexManager {
+
 private final String path;
+
+
+
 public RegexManager(String path){
     this.path = path;
 }
+
+
+
     private String getTextFromFile() {
         File file = new File(path);
         String text = null;
@@ -37,6 +44,9 @@ public RegexManager(String path){
         }
         return text;
     }
+
+
+
     public String removeWordsWithMoreVowels() {
         String txt = getTextFromFile();
         StringBuilder stringbuilder = new StringBuilder(txt);
@@ -50,6 +60,8 @@ public RegexManager(String path){
             else return m.group();
         }).trim().replaceAll(" +", " ").strip().concat("\n");
     }
+
+
 
     @Override
     public boolean equals(Object o) {
