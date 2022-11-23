@@ -1,5 +1,7 @@
-package milk.manager.iot;
+package milk.manager.iot.lab7;
 
+import milk.manager.iot.Manager;
+import milk.manager.iot.Writer;
 import milk.products.iot.Cheese;
 import milk.products.iot.Milk;
 import milk.products.iot.MilkProduct;
